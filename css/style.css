@@ -1,0 +1,155 @@
+li {
+    list-style: none;
+}
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-background-color: #FFFFFF;
+    --background-color-footer: #2F303A;
+    --secondary-background-color: #F5F4FA;
+}
+/*  
+primary text color: #212121;
+secondary text color: #757575;
+accent: #2196F3;
+footer contact color: rgba(255, 255, 255, 0.6);
+white color: #ffffff;
+black color: #000000;
+background color footer: #2F303A;
+primary background color: #FFFFFF;
+secondary background color: #F5F4FA;
+*/
+
+/* header */
+ 
+body {
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+.logo,
+.logo:focus {
+    color: var(--black-color);
+}
+
+.part-logo{
+    color: var(--accent-color);
+}
+
+.site-nov .link{
+    color: var(--primary-text-color);
+}
+
+.site-nov .link:hover,
+.site-nov .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nov .link.current{
+    color: var(--accent-color);
+}
+.auth-nav{
+    color: var(--secondary-text-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+    color: var(--accent-color);
+}
+
+/* hero */  
+.hero{
+    background-color: var(--background-color-footer);
+}
+
+.hero-title{
+    color: var(--white-color);
+}
+
+/* section */
+
+.section-title{
+    color: var(--primary-text-color);
+}
+/* features */
+
+.features-list .title{
+    color: var(--primary-text-color);
+}
+
+/* our team */
+
+.team-list .name{
+    color: var(--primary-text-color);
+}
+
+.team-list .position{
+    color: var(--secondary-text-color);
+}
+/* footer */
+
+.footer{
+    background-color: var(--background-color-footer);
+}
+
+.footer .logo{
+    color: var(--white-color);
+}
+
+.footer .logo:focus{
+    color: var(--white-color);
+}
+
+
+.address-lis .map{
+    color: var(--white-color);
+}
+
+.address-list .map:hover,
+.address-list .map:focus{
+   color: var(--accent-color);
+}
+
+.address-list .link{
+    color: var(--footer-contact-color);
+}
+
+.address-list .link:hover,
+.address-list .link:focus {
+    color: var(--accent-color);
+}
+
+/* button */
+
+.hero .button{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.hero .button:focus,
+.hero .button:hover{
+    color: var(--black-color);
+    background-color: var(--primary-background-color);
+}
+
+
+/* Portfolio */
+
+.section .button:focus,
+.section .button:hover{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-list .category{
+    color: var(--secondary-text-color);
+}
+
+.link:visited {
+    color: none;
+}
