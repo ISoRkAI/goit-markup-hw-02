@@ -30,7 +30,7 @@ body {
     background: var(--primary-background-color);
     color: var(--primary-text-color);
 
-    font-family: robota, sans-serif;
+    font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
     
 }
@@ -39,10 +39,9 @@ body {
 
 /* Logo */
 
-.logo,
-.logo:focus {
+.logo{
     color: var(--black-color);
-
+    
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -50,11 +49,16 @@ body {
     text-decoration: none;
 }
 
+.logo:focus {
+    color: var(--black-color);
+}
+
 .part-logo{
     color: var(--accent-color);
 }
 
-.site-nov .link{
+.site-nav-link{
+    color: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -62,16 +66,16 @@ body {
     text-decoration: none;
 }
 
-.site-nov .link.current{
+.site-nav-link.current{
     color: var(--accent-color);
 }
 
-.site-nov .link:hover,
-.site-nov .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
     color: var(--accent-color);
 }
 
-.auth-nav .link{
+.auth-nav-link{
     color: var(--secondary-text-color);
 
     font-weight: 500;
@@ -81,8 +85,8 @@ body {
     text-decoration: none;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus{
+.auth-nav-link:hover,
+.auth-nav-link:focus{
     color: var(--accent-color);
 }
 
@@ -96,9 +100,10 @@ body {
 
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* section */
@@ -112,13 +117,14 @@ body {
 
 /* features */
 
-.features-list .title{
+.features-list-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 
-.features-list .text{
+.features-list-text{
     color: var(--secondary-text-color);
 
     font-size: 14px;
@@ -127,14 +133,14 @@ body {
 
 /* our team */
 
-.team-list .name{
+.name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     /* text-align: center; */
 }
 
-.team-list .position{
+.position{
     color: var(--secondary-text-color);
 
     font-size: 16px;
@@ -147,15 +153,23 @@ body {
     background-color: var(--background-color-footer);
 }
 
-.footer .logo:focus,
-.footer .logo{
+.footer-logo:focus{
     color: var(--white-color);
+}
 
+.footer-logo{
+    color: var(--white-color);
+   
+    font-family: Raleway,sans-serif;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 
-.address-list .map{
+.address-list-map{
     color: var(--white-color);
 
     font-style: normal;
@@ -164,12 +178,12 @@ body {
     text-decoration: none;
 }
 
-.address-list .map:hover,
-.address-list .map:focus{
+.address-list-map:hover,
+.address-list-map:focus{
    color: var(--accent-color);
 }
 
-.address-list .link{
+.address-list-link{
     color: var(--footer-contact-color);
 
     font-style: normal;
@@ -178,20 +192,15 @@ body {
     text-decoration: none;
 }
 
-.address-list .link:hover,
-.address-list .link:focus {
+.address-list-link:hover,
+.address-list-link:focus {
     color: var(--accent-color);
 }
 
 /* button */
 
-.button{
-    cursor: pointer;
-}
-
-
-.hero .button{
-    color: var(--white-color);
+.hero-button{
+    color: var(--secondary-background-color);
     background-color: var(--accent-color);
 
     font-weight: 700;
@@ -200,39 +209,46 @@ body {
     letter-spacing: 0.06em;
 }
 
-.hero .button:focus,
-.hero .button:hover{
+.hero-button:focus,
+.hero-button:hover{
     color: var(--black-color);
-    background-color: var(--primary-background-color);
+    background-color: var(--secondary-background-color);
 }
 
 
 /* Portfolio */
 
-.section .button{
+.button{
+    font-family: roboto,sans-serif;
+    color: inherit;
+    background-color: var(--secondary-background-color);
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
-.section .button:focus,
-.section .button:hover{
+.button:focus,
+.button:hover{
     color: var(--white-color);
     background-color: var(--accent-color);
 }
 
-.portfolio-list .link {
+.portfolio-list-link {
     text-decoration: none;
 }
 
-.portfolio-list .title{
+.portfolio-list-title{
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio-list .category{
+.portfolio-list-category{
     color: var(--secondary-text-color);
 
     font-size: 16px;
